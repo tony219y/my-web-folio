@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000000;
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  
+}
+:root {
+  font-family: 'Outfit', sans-serif;
+}
+
+.glowing-cursor {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.6);
+  z-index: 9999;
+  transition: transform 0.1s ease-out;
+}
+
