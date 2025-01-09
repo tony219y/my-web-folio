@@ -90,7 +90,7 @@ const skills = [
 
 const CardSkill = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-6 p-6">
+    <div className="flex flex-wrap justify-center gap-6 p-6 z-10">
       {skills.map((skill, index) => (
         <div
           key={index}

@@ -68,7 +68,7 @@ function App() {
 
   return (
     <>
-     <div className="max-md:hidden">
+     <div className="max-md:hidden z-10">
         <Navbar
           isSecondDivVisible={isSecondDivVisible}
           scrollToSecondDiv={scrollToSecondDiv}
@@ -81,7 +81,7 @@ function App() {
       {/* First Div */}
       <div
         ref={firstDivRef}
-        className="flex w-full h-screen bg-gradient-to-b from-black to-[#2D0040] items-center px-5"
+        className="flex w-full h-screen bg-gradient-to-b from-black to-[#2D0040] items-center px-5 z-10"
       >
         <div className="flex flex-col w-full justify-center px-5 gap-5 md:pl-60 z-10">
           <h1 className="text-[#C1C1C1] flex text-[40px] md:text-[100px] gap-2 text-center">
@@ -128,10 +128,10 @@ function App() {
       {/* Second Div */}
       <div
         ref={secondDivRef}
-        className="flex flex-col w-full min-h-screen bg-[#F8F8F8] px-3 md:px-[75px] py-10 gap-5"
+        className="flex flex-col w-full min-h-screen bg-[#F8F8F8] px-3 md:px-[75px] py-10 gap-5 z-10"
       >
-        <div className="flex flex-col md:flex-row w-full h-fit pt-10 gap-5 justify-around">
-          <div className="flex flex-col w-full md:w-[550px] h-[200px] bg-white border-2 justify-between py-5 px-3">
+        <div className="flex flex-col md:flex-row w-full h-fit pt-10 gap-5 justify-around z-10">
+          <div className="flex flex-col w-full md:w-[550px] h-[200px] bg-white border-2 justify-between py-5 px-3 z-10">
             <h1 className="font-bold text-lg self-center">ABOUT</h1>
             <p className="font-extralight text-sm md:text-lg">
               My name is Akeanant Poomdeesittinon, and my nickname is Gun. <br />
