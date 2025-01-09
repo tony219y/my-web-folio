@@ -14,8 +14,8 @@ function Navbar({
   scrollToForthDiv
 }: NavbarProps) {
   return (
-    <div className="fixed top-0 w-full h-[70px] font-outfit p-5 px-[70px] z-20">
-      <div className="flex w-full justify-around">
+    <div className="fixed flex top-0 w-full h-[70px] font-outfit p-5 px-[70px] z-20 overflow-hidden items-center max-lg:px-10">
+      <div className="flex w-full justify-between items-center ">
         <h1
           onClick={scrollToFirstDiv}
           className={`font-bold ${
@@ -29,7 +29,7 @@ function Navbar({
         <div
           className={`flex justify-around items-center ${
             !isSecondDivVisible ? "bg-[#F8F8F8]" : "bg-[#1C1C1C]"
-          } h-10 w-1/3 gap-5 shadow-inner-strong rounded-full px-6 duration-500`}
+          } h-10 w-1/3 gap-5 shadow-inner-strong rounded-full px-6 duration-500 max-xl:hidden`}
         >
           <button
             onClick={scrollToSecondDiv}
@@ -56,8 +56,8 @@ function Navbar({
             CONTACT
           </button>
         </div>
-        <button className="bg-[#1E1E1E] rounded-full px-6 h-10 text-white hover:bg-[#F8F8F8] hover:text-black duration-500">
-          Request a Call
+        <button className="bg-[#1E1E1E] px-6 rounded-full h-10 text-white hover:bg-[#F8F8F8] hover:text-black duration-500">
+          <p>Request a Call</p>
         </button>
       </div>
     </div>

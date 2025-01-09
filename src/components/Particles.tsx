@@ -24,7 +24,7 @@ const ParticlesBackground: React.FC = () => {
       options={{
         particles: {
           number: {
-            value: 30,
+            value: 15,
           },
           shape: {
             type: "circle", // รูปทรงวงกลม
