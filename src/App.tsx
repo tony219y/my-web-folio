@@ -90,7 +90,7 @@ function App() {
           <h1 className="text-[#C1C1C1] flex gap-2 text-[20px] md:text-[40px]">
             I'm a <span className="text-white">Web developer</span>
           </h1>
-          <div className="flex w-1/3 justify-around md:justify-around items-center bg-[#F8F8F8] gap-3 md:gap-5 shadow-inner-strong rounded-full p-2 max-sm:w-full">
+          <div className="flex w-1/3 justify-around md:justify-around items-center bg-[#F8F8F8] gap-3 md:gap-5 shadow-inner-strong rounded-full p-2 max-sm:w-full z-10">
             <button
               onClick={() =>
                 window.open(
