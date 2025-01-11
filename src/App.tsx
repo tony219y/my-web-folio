@@ -133,7 +133,7 @@ function App() {
         <div className="flex flex-col md:flex-row w-full h-fit pt-10 gap-5 justify-around z-10">
           <div className="flex flex-col w-full md:w-[550px] h-[200px] bg-white border-2 justify-between py-5 px-3 z-10">
             <h1 className="font-bold text-lg self-center">ABOUT</h1>
-            <p className="font-extralight text-sm md:text-lg">
+            <p className="font-extralight text-lg max-lg:text-sm">
               My name is Akeanant Poomdeesittinon, and my nickname is Gun. <br />
               I am currently studying{" "}
               <a
@@ -165,7 +165,7 @@ function App() {
           </div>
         </div>
 
-        <div className="flex h-full w-full justify-center items-center flex-wrap">
+        <div className="flex h-full w-full justify-center items-center">
           <CardSkill />
         </div>
       </div>
