@@ -30,6 +30,7 @@ const MouseGlow = () => {
 
   return (
     <div
+    className="max-md:hidden"
       style={{
         position: "fixed",
         left: `${cursorPosition.x}px`,

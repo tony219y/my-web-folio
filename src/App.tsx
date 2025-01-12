@@ -68,7 +68,7 @@ function App() {
 
   return (
     <>
-     <div className="max-md:hidden z-10">
+     <div className="z-10">
         <Navbar
           isSecondDivVisible={isSecondDivVisible}
           scrollToSecondDiv={scrollToSecondDiv}
@@ -120,7 +120,7 @@ function App() {
               <Instagram />
             </button>
           </div>
-          <MouseGlow />
+          <MouseGlow/>
           <ParticlesBackground />
         </div>
       </div>
