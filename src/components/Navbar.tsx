@@ -21,12 +21,17 @@ function Navbar({
   const [lastScrollY, setLastScrollY] = useState<number>(0);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = async () => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY && currentScrollY > 50) {
         // User is scrolling down
-        setShowNavbar(false);
+        try{
+          setnavToggle(false)
+        }
+        finally{
+          setShowNavbar(false);
+        }
       } else {
         // User is scrolling up
         setShowNavbar(true);
