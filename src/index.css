@@ -3,25 +3,88 @@
 @tailwind utilities;
 
 body {
-  background-color: #000000;
   margin: 0;
   font-family: 'Outfit', sans-serif;
-  
-}
-:root {
-  font-family: 'Outfit', sans-serif;
+  background-color: #151312;
+  position: relative;
+  z-index: -1;
+  /* overflow: hidden; */
 }
 
-.glowing-cursor {
-  position: fixed;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.8);
+.scroll-up {
+  transform: translateY(-50px);
+}
+
+.scroll-down {
+  transform: translateY(0);
+}
+
+/* ซ่อน scrollbar สำหรับ Chrome, Safari และ Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* ซ่อน scrollbar สำหรับ IE, Edge และ Firefox */
+* {
+  -ms-overflow-style: none;  /* IE และ Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(255, 255, 255, 0.03) 50%,
+      transparent 100%
+    ),
+    repeating-linear-gradient(
+      transparent 0px,
+      transparent 2px,
+      rgba(255, 255, 255, 0.1) 3px,
+      rgba(255, 255, 255, 0.1) 5px
+    );
+  background-size: 100% 100%, 100% 5px;
+  animation: tv-static 0.15s infinite;
+  opacity: 0.15;
   pointer-events: none;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.6);
-  z-index: 9999;
-  transition: transform 0.1s ease-out;
+  z-index: 1;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  will-change: transform;
+}
+
+@keyframes tv-static {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
+.scroll-up {
+  transform: translateY(-50px);
+}
+
+.scroll-down {
+  transform: translateY(0);
+}
+
+/* ซ่อน scrollbar สำหรับ Chrome, Safari และ Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* ซ่อน scrollbar สำหรับ IE, Edge และ Firefox */
+* {
+  -ms-overflow-style: none;  /* IE และ Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
