@@ -3,8 +3,8 @@ function Projects() {
     <div className="flex flex-col w-[60%] min-h-screen h-full max-lg:w-full">
         {/* Top Container   */}
         <div className="flex flex-col w-full h-full justify-center items-start pt-16 gap-4 p-4 max-lg:items-center">
-            <h1 className="text-white text-7xl font-bold 2xl:text-8xl max-md:text-4xl">RECENT</h1>
-            <h1 className="text-white/20 text-7xl font-bold 2xl:text-8xl max-md:text-4xl">PROJECTS</h1>
+            <h1 className="text-white text-8xl font-bold 2xl:text-8xl max-md:text-4xl">RECENT</h1>
+            <h1 className="text-white/20 text-8xl font-bold 2xl:text-8xl max-md:text-4xl">PROJECTS</h1>
         </div>
         {/* Bottom Container */}
         <div className="flex flex-col w-full flex-grow overflow-y-auto">

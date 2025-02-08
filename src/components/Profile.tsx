@@ -25,11 +25,11 @@ function Profile() {
                 <h1 className="text-black text-2xl font-bold text-center max-md:text-xl">Akeanant Poomdeesittinon</h1>
             </div>
             {/* Information Container */}
-            <div className="flex flex-col w-1/2 h-1/2 bg-white/10 backdrop-blur-sm rounded-xl gap-4 p-4 justify-around max-md:w-full">
+            <div className="flex flex-col w-1/2 h-1/2 bg-black/10 backdrop-blur-sm rounded-xl gap-4 p-4 justify-around max-md:w-full">
             <p className="text-black/50 text-sm text-center">
                 A Web Developer who is interested in building a website that is easy to use and has a good user experience.
             </p>
-            <div className="flex w-full h-fit bg-white/30 backdrop-blur-sm rounded-xl justify-around items-center p-2">
+            <div className="flex w-full h-fit bg-white/80 backdrop-blur-sm rounded-xl justify-around items-center p-2">
                 <a href="https://www.facebook.com/gunaekanan/" className="hover:scale-125 transition-transform duration-300">
                     <FaFacebook size={20}/>
                 </a>
