@@ -4,8 +4,8 @@ function Landing() {
     <div className="flex flex-col w-[60%] h-full max-lg:w-full">
           {/* Top Container */}
           <div className="flex flex-col w-full h-full items-start pt-16 p-4 gap-5 max-lg:items-center">
-            <h1 className="text-white text-8xl font-bold 2xl:text-5xl max-md:text-4xl">WEB</h1>
-            <h1 className="text-white/30 text-8xl font-bold 2xl:text-5xl max-md:text-4xl">DEVELOPER</h1>
+            <h1 className="text-white text-8xl font-bold 2xl:text-8xl max-md:text-4xl">WEB</h1>
+            <h1 className="text-white/30 text-8xl font-bold 2xl:text-8xl max-md:text-4xl">DEVELOPER</h1>
             <p className="text-white/40 text-xl font-light 2xl:text-lg max-md:text-sm">
               "I am passionate about creating beautiful and functional websites that offer seamless experiences. 
               I love designing visually appealing layouts while ensuring that every element serves a purpose and enhances 
