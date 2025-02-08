@@ -57,7 +57,7 @@ function Navbar() {
       clearTimeout(scrollTimeout);
       scrollTimeout = setTimeout(() => {
         navbar?.classList.remove('-translate-y-full');
-      }, 1000);
+      }, 100);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -65,7 +65,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar fixed w-full top-0 flex justify-center items-center mt-5 transition-transform duration-700">
+      <nav className="navbar fixed w-full top-0 flex justify-center items-center mt-5 transition-transform duration-700 z-50">
         <div className="flex w-1/5 bg-[#373737] justify-around items-center p-2 rounded-xl max-md:w-1/2">
           {navItems.map((item) => (
             <NavItem key={item.label} {...item} />

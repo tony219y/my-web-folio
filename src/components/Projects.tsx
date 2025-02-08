@@ -10,11 +10,11 @@ function Projects() {
         <div className="flex flex-col w-full flex-grow overflow-y-auto">
             <div className="flex flex-col w-full items-center gap-4 p-4">
                 {/* Project 1 */}
-                <div className="flex h-[200px] w-full bg-white/20 p-4 gap-4 rounded-xl hover:bg-white/30 transition-all duration-700 max-md:h-[150px] max-md:justify-between">
-                    <div className="flex h-full w-1/3 bg-white/20 rounded-xl max-md:w-full">
+                <div className="flex h-[200px] w-full p-4 gap-4 rounded-xl transition-all duration-700 max-md:h-[150px] max-md:justify-between hover:bg-white/10">
+                    <div className="flex h-full w-1/3 bg-white rounded-xl max-md:w-full">
                         {/* <img src="" alt="img" /> */}
                     </div>
-                    <div className="flex flex-col h-full w-full  bg-white/20 justify-center items-start p-4 gap-4 rounded-xl">
+                    <div className="flex flex-col h-full w-full justify-center items-start p-4 gap-4 rounded-xl">
                         <h1 className="text-white text-2xl font-bold max-md:text-xl">Project 1</h1>
                         <p className="text-white/80 text-md font-light max-md:text-sm">Description</p>
                     </div>
@@ -23,11 +23,11 @@ function Projects() {
                     </div>
                 </div>
                 {/* Project 2 */}
-                <div className="flex h-[200px] w-full bg-white/20 p-4 gap-4 rounded-xl hover:bg-white/30 transition-all duration-700 max-md:h-[150px] max-md:justify-between">
-                    <div className="flex h-full w-1/3 bg-white/20 rounded-xl max-md:w-full">
+                <div className="flex h-[200px] w-full p-4 gap-4 rounded-xl transition-all duration-700 max-md:h-[150px] max-md:justify-between hover:bg-white/10">
+                    <div className="flex h-full w-1/3 bg-white rounded-xl max-md:w-full">
                         {/* <img src="" alt="img" /> */}
                     </div>
-                    <div className="flex flex-col h-full w-full bg-white/20 justify-center items-start p-4 gap-4 rounded-xl max-md:w-full">
+                    <div className="flex flex-col h-full w-full justify-center items-start p-4 gap-4 rounded-xl max-md:w-full">
                         <h1 className="text-white text-2xl font-bold max-md:text-xl">Project 2</h1>
                         <p className="text-white/80 text-md font-light max-md:text-sm">Description</p>
                     </div>
@@ -36,11 +36,11 @@ function Projects() {
                     </div>
                 </div>
                 {/* Project 3 */}
-                <div className="flex h-[200px] w-full bg-white/20 p-4 gap-4 rounded-xl hover:bg-white/30 transition-all duration-700 max-md:h-[150px] max-md:justify-between">
-                    <div className="flex h-full w-1/3 bg-white/20 rounded-xl max-md:w-full">
+                <div className="flex h-[200px] w-full p-4 gap-4 rounded-xl transition-all duration-700 max-md:h-[150px] max-md:justify-between hover:bg-white/10">
+                    <div className="flex h-full w-1/3 bg-white rounded-xl max-md:w-full">
                         {/* <img src="" alt="img" /> */}
                     </div>
-                    <div className="flex flex-col h-full w-full  bg-white/20 justify-center items-start p-4 gap-4 rounded-xl max-md:w-full">
+                    <div className="flex flex-col h-full w-full justify-center items-start p-4 gap-4 rounded-xl max-md:w-full">
                         <h1 className="text-white text-2xl font-bold max-md:text-xl">Project 3</h1>
                         <p className="text-white/80 text-md font-light max-md:text-sm">Description</p>
                     </div>

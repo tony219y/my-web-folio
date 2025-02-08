@@ -43,17 +43,17 @@ body::before {
     linear-gradient(
       to bottom,
       transparent 0%,
-      rgba(255, 255, 255, 0.03) 50%,
+      rgba(255, 255, 255, 0.01) 70%,
       transparent 100%
     ),
     repeating-linear-gradient(
       transparent 0px,
       transparent 2px,
-      rgba(255, 255, 255, 0.1) 3px,
+      rgba(255, 255, 255, 0.1) 2px,
       rgba(255, 255, 255, 0.1) 5px
     );
   background-size: 100% 100%, 100% 5px;
-  animation: tv-static 0.15s infinite;
+  animation: tv-static 0.2s infinite;
   opacity: 0.15;
   pointer-events: none;
   z-index: 1;

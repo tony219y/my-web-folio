@@ -5,14 +5,20 @@ function Profile() {
 
   return (
     <div className="flex w-full h-fit justify-center items-center lg:hidden p-8 mt-[8%]">
-      <div className="profile-card flex w-full h-fit bg-white backdrop-blur-sm rounded-xl">
+      <div className="relative profile-card flex w-full h-fit bg-white backdrop-blur-sm rounded-xl overflow-hidden">
+        <div className="absolute -top-10 -left-10 w-[200px] h-[200px] p-[4px] rounded-full bg-gradient-to-r from-white via-black/30 to-white animate-spin" style={{animation: 'spin 5s linear infinite'}}>
+          <div className="w-full h-full bg-white rounded-full"></div>
+        </div>
+        <div className="absolute -bottom-10 -right-10 w-[200px] h-[200px] p-[4px] rounded-full bg-gradient-to-r from-white via-black/30 to-white" style={{animation: 'spin 5s linear infinite'}}>
+          <div className="w-full h-full bg-white rounded-full"></div>
+        </div>
       {/* Main Container */}
         <div className="flex flex-col w-full h-full justify-around items-center p-8 shadow-lg shadow-white/20 rounded-xl">
         {/* Profile Container */}
-            <div className="flex flex-col w-full h-full rounded-xl justify-around items-center p-4 gap-2">
+            <div className="flex flex-col w-full h-full rounded-xl justify-around items-center p-4 gap-2 z-10">
                 <div className="flex rounded-xl justify-center items-center">
                     <div className="flex w-full h-full bg-white rounded-xl p-1 justify-center items-center">
-                        <img src="./profile.png" alt="Profile" 
+                        <img src="./profile.png" alt="Akeanant Poomdeesittinon" 
                             className="w-full h-full object-cover rounded-xl max-xl:w-1/3 max-xl:h-1/3 max-md:w-full max-md:h-1/2" />
                     </div>
                 </div>
