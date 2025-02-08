@@ -7,7 +7,7 @@ export default function Techstack() {
                     <h1 className="text-white/20 text-8xl font-bold 2xl:text-8xl max-md:text-4xl">STACK</h1>
                     <div className="grid grid-cols-2 w-full h-full gap-4 rounded-xl p-4 max-md:grid-cols-1">
                         <div className="flex w-full h-[100px] rounded-xl p-2 hover:scale-105 transition-all duration-300 hover:cursor-pointer hover:bg-white/20">
-                            <div className="flex w-fit h-full bg-white rounded-xl p-2 gap-2 max-md:w-fit">
+                            <div className="flex w-fit h-full bg-white rounded-xl p-2 gap-2 max-md:w-[90px]">
                                 <img src="./react.png" alt="react" className="w-full h-full object-cover rounded-xl" />
                             </div>
                                 <div className="flex flex-col h-full rounded-xl p-2">
