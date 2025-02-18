@@ -20,7 +20,7 @@ function Landing() {
             </p>  
             </div>
             <div className="flex flex-col h-full w-1/3 rounded-xl justify-center items-center">
-            <h1 className="text-white text-8xl font-bold max-md:text-5xl">+0</h1>
+            <h1 className="text-white text-8xl font-bold max-md:text-5xl">+1</h1>
             <p className="text-white/80 text-md font-light text-end max-md:text-[10px]">
               PROJECTS <br /> COMPLETED
             </p>
