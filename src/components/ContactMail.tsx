@@ -6,6 +6,9 @@ function ContactMail() {
     const [subject, setSubject] = useState("")
     const [message, setMessage] = useState("")
 
+    
+    
+
     return (
         <div className="flex flex-col w-[60%] max-lg:w-full z-10">
             <div className="flex flex-col w-full h-full justify-center items-start pt-16 gap-4 p-4 max-lg:items-center rounded-xl max-md:gap-4">
@@ -24,7 +27,8 @@ function ContactMail() {
                                     <input 
                                         type="text" 
                                         name="name" 
-                                        placeholder="Name" 
+                                        placeholder="Name"
+                                        value={name} 
                                         className="w-full p-2 pl-4 rounded-xl bg-white/30 text-white placeholder:text-white outline-none" 
                                         required 
                                         onChange={(e) => setName(e.target.value)} 
@@ -36,6 +40,7 @@ function ContactMail() {
                                         type="email" 
                                         name="email" 
                                         placeholder="Email" 
+                                        value={email}
                                         className="w-full p-2 pl-4 rounded-xl bg-white/30 text-white placeholder:text-white outline-none" 
                                         required 
                                         onChange={(e) => setEmail(e.target.value)} 
@@ -48,6 +53,7 @@ function ContactMail() {
                                     type="text" 
                                     name="subject" 
                                     placeholder="Subject" 
+                                    value={subject}
                                     className="w-full p-2 pl-4 rounded-xl bg-white/30 text-white placeholder:text-white outline-none" 
                                     required 
                                     onChange={(e) => setSubject(e.target.value)} 
@@ -58,6 +64,7 @@ function ContactMail() {
                                 <textarea 
                                     name="message" 
                                     placeholder="Message" 
+                                    value={message}
                                     className="w-full min-h-[200px] p-2 pl-4 rounded-xl bg-white/30 text-white placeholder:text-white outline-none" 
                                     required 
                                     onChange={(e) => setMessage(e.target.value)} 
