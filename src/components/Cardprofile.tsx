@@ -1,40 +1,6 @@
-import { useEffect } from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 function Cardprofile() {
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-    let scrollTimeout: ReturnType<typeof setTimeout>;
-    
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      const profileCard = document.querySelector('.profile-card');
-      
-      if (currentScrollY > lastScrollY) {
-        // เลื่อนลง - ให้การ์ดเลื่อนขึ้นทันที
-        profileCard?.classList.add('scroll-up');
-        profileCard?.classList.remove('scroll-down');
-      }
-      
-      // ยกเลิก timeout เดิม (ถ้ามี)
-      clearTimeout(scrollTimeout);
-      
-      // ตั้ง timeout ใหม่เพื่อกลับสู่ตำแหน่งเดิมหลังจากหยุดเลื่อน 0.3 วินาที
-      scrollTimeout = setTimeout(() => {
-        profileCard?.classList.add('scroll-down');
-        profileCard?.classList.remove('scroll-up');
-      }, 300);
-      
-      lastScrollY = currentScrollY;
-    };
-
-    window.addEventListener('scroll', handleScroll); 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      clearTimeout(scrollTimeout);
-    };
-  }, []);
-
   return (
     <div className="left-[10%] fixed flex w-1/4 h-screen justify-center items-center max-lg:hidden overflow-x-hidden overflow-y-hidden">
       <div className="relative profile-card flex w-full h-fit bg-white backdrop-blur-sm rounded-xl transition-transform duration-700 z-10 overflow-hidden">

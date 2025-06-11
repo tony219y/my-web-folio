@@ -1,4 +1,3 @@
-
 function Landing() {
   return (
     <div className="flex flex-col w-[60%] h-full max-lg:w-full">
@@ -7,16 +6,17 @@ function Landing() {
             <h1 className="text-white text-8xl font-bold 2xl:text-8xl max-md:text-4xl">WEB</h1>
             <h1 className="text-white/30 text-8xl font-bold 2xl:text-8xl max-md:text-4xl">DEVELOPER</h1>
             <p className="text-white/40 text-xl font-light 2xl:text-lg max-md:text-sm">
-              "I am passionate about creating beautiful and functional websites that offer seamless experiences. 
-              I love designing visually appealing layouts while ensuring that every element serves a purpose and enhances 
-              usability."
+              "Third-year student passionate about becoming a Fullstack Developer. 
+              I'm really excited about mastering both Frontend and Backend development to create complete web applications from user interfaces to database systems.
+              I have experience with React, Svelte, TailwindCSS, Node, PostgreSQL etc. and I love picking up new technologies and constantly improving my skills."
             </p>
           {/* Bottom Container */}
           <div className="flex w-fit h-1/3 justify-start p-8 gap-8">
+
             <div className="flex flex-col h-full w-1/3 rounded-xl justify-center items-center">
             <h1 className="text-white text-8xl font-bold max-md:text-5xl">+5</h1>
             <p className="text-white/80 text-md font-light text-end max-md:text-[10px]">
-              YEARS OF <br /> EXPERIENCE
+              YEARS OF <br /> LEARNING & DEVELOPMENT
             </p>  
             </div>
             <div className="flex flex-col h-full w-1/3 rounded-xl justify-center items-center">
