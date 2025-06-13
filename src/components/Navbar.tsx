@@ -6,6 +6,7 @@ import {
   PenTool,
   LucideIcon,
 } from "lucide-react";
+import React from "react";
 
 const navItems = [
   { icon: House, label: "Home", href: "#home" },
@@ -21,7 +22,7 @@ type NavItemProps = {
   href: string;
 };
 
-const NavItem = ({ icon: Icon, label, href }: NavItemProps) => {
+const NavItem = React.memo(({ icon: Icon, label, href }: NavItemProps) => {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const target = document.querySelector(href);
@@ -40,7 +41,7 @@ const NavItem = ({ icon: Icon, label, href }: NavItemProps) => {
       </span>
     </a>
   );
-};
+});
 
 const Navbar = () => {
   return (

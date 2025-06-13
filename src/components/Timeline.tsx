@@ -1,4 +1,6 @@
-export default function Timeline() {
+import React  from "react";
+
+export default React.memo(function Timeline() {
     const events = [
         {
             date: "2020-2023",
@@ -33,4 +35,4 @@ export default function Timeline() {
             ))}
         </div>
     )
-}
+});

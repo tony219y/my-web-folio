@@ -8,7 +8,7 @@ import Techstack from "./components/Techstack"
 import ContactMail from "./components/ContactMail"
 function App() {
   return (
-    <>
+    <> 
       <Navbar />
       <Cardprofile />
       <Profile />

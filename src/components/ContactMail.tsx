@@ -1,13 +1,10 @@
-import { useState } from "react"
+import React, { useState } from "react"
 
-function ContactMail() {
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [subject, setSubject] = useState("")
-    const [message, setMessage] = useState("")
-
-    
-    
+const ContactMail = React.memo(function ContactMail() {
+    const [name, setName] = useState<string>("")
+    const [email, setEmail] = useState<string>("")
+    const [subject, setSubject] = useState<string>("")
+    const [message, setMessage] = useState<string>("")
 
     return (
         <div className="flex flex-col w-[60%] max-lg:w-full z-10">
@@ -82,6 +79,6 @@ function ContactMail() {
             </div>
         </div>
     )
-}
+});
 
-export default ContactMail
+export default ContactMail;
