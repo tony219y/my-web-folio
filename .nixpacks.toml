@@ -1,0 +1,2 @@
+[start]
+cmd = "yarn run preview --host"
