@@ -27,7 +27,7 @@ function Profile() {
             {/* Information Container */}
             <div className="flex flex-col w-1/2 h-1/2 bg-black/10 backdrop-blur-sm rounded-xl gap-4 p-4 justify-around max-md:w-full">
             <p className="text-black/50 text-sm text-center">
-                A Web Developer who is interested in building a website that is easy to use and has a good user experience.
+                A Full Stack Developer.
             </p>
             <div className="flex w-full h-fit bg-white/80 backdrop-blur-sm rounded-xl justify-around items-center p-2">
                 <a href="https://www.facebook.com/gunaekanan/" className="hover:scale-125 transition-transform duration-300">
